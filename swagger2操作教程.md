@@ -133,6 +133,7 @@ public class UserController {
 
 ```
 5.通过web页面来查看apidoc:[查看样例](http://47.92.0.76:80/ptccservice/swagger-ui.html)
+
 6.swagger2常用注解：
 ####springfox、swagger.annotations.*注解部分参数介绍
 - @ApiIgnore 忽略注解标注的类或者方法，不添加到API文档中
