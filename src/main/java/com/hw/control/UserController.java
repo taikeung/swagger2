@@ -1,4 +1,4 @@
-package com.hw.control;
+ï»¿package com.hw.control;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -16,17 +16,17 @@ import com.wordnik.swagger.annotations.ApiResponse;
 
 import io.swagger.annotations.ApiOperation;
 
-@Api(value = "User¿ØÖÆÆ÷")
+@Api(value = "Useræ§åˆ¶å™¨")
 @Controller
 @RequestMapping("/user")
 public class UserController {
 	    
-	@ApiOperation(value = "¸ù¾İÓÃ»§id²éÑ¯ÓÃ»§ĞÅÏ¢", httpMethod = "GET", produces = "application/json")
+	@ApiOperation(value = "æ ¹æ®ç”¨æˆ·idæŸ¥è¯¢ç”¨æˆ·ä¿¡æ¯", httpMethod = "GET", produces = "application/json")
 	@ApiResponse(code = 200, message = "success", response = Result.class)
 	@ResponseBody
 	@RequestMapping(value = "/queryUserById", method = RequestMethod.GET, produces = "application/json")
 	public Result queryUserById(
-			@ApiParam(name = "userId", required = true, value = "ÓÃ»§Id") 
+			@ApiParam(name = "userId", required = true, value = "ç”¨æˆ·Id") 
 			@RequestParam("userId") int userId, HttpServletRequest request) {
 		User user = new User(userId, "haoyifen", 24);
 		Result result = new Result();
