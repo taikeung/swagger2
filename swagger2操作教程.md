@@ -167,7 +167,7 @@ public class UserController {
 - @ApiParam 对单独某个参数进行说明，使用在类中或者controller方法中都可以。注解中的属性和上面列出的同名属性作用相同
 
 
-dataweb示例（基金相关操作接口：com.fid.controller.ThemeFundController）：
+# ## dataweb示例（基金相关操作接口：com.fid.controller.ThemeFundController）： ## #
   
 ``` java  
 package com.fid.controller;
