@@ -1,4 +1,8 @@
 #  Spring MVC中使用 Swagger2 构建Restful API
+>**Swagger** is a powerful **open source framework** backed by a large ecosystem of tools that helps you design, build, document, and consume your **RESTful APIs**.
+>
+>官网：[http://swagger.io/](http://swagger.io/)
+
 1. 添加swagger2相关依赖：
 ``` java
 		<!--swagger2,springmvc中间包-->
@@ -154,7 +158,7 @@ public class UserController {
 	form 笔者未使用，请查看官方API文档
 	dataType 数据类型，如果类型名称相同，请指定全路径，例如 dataType = “java.util.Date”，springfox会自动根据类型生成模型
 - @ApiImplicitParams 包含多个@ApiImplicitParam
-
+- @ApiModel 定义controller请求参数中的封装类型
 - @ApiModelProperty 对模型中属性添加说明，例如 上面的PageInfoBeen、BlogArticleBeen这两个类中使用，只能使用在类中。
 	value 参数名称
 	required 是否必须 boolean
@@ -1354,6 +1358,18 @@ public class ThemeFundController {
 
 启动我们的dataweb项目，输入[http://data.news.21fid.com/fidnews/v1/swagger-ui.html](http://data.news.21fid.com/fidnews/v1/swagger-ui.html)
 会出现我们的api文档web界面
-![]()
+## 接口列表： ##
+![](img/index.PNG) 
+
+---
+
+## 上面接口api： ##
+![](img/fund.PNG)
+
+---
+
+## 测试界面： ##
+![](img/test.PNG)
+
 
 附录：[官方文档http://www.baeldung.com/swagger-2-documentation-for-spring-rest-api](http://www.baeldung.com/swagger-2-documentation-for-spring-rest-api)
